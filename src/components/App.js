@@ -8,7 +8,6 @@ import navigation from '../static/navigation.json';
 import styleVariables from '../shared/style/variables.scss';
 
 function App() {
-    console.log(styleVariables);
     let theme = createMuiTheme({
         palette: {
             primary: {
