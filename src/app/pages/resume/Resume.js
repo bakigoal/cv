@@ -12,6 +12,7 @@ import navigation from "../../../static/navigation";
 import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import styleVariables from "../../../shared/style/variables.scss";
+import {Container} from "@material-ui/core";
 
 const LANGUAGES = ['RU', 'EN'];
 
@@ -31,6 +32,10 @@ const Resume = () => {
         },
         typography: {
             fontSize: 16,
+            h3: {
+                color: styleVariables.cyanColor,
+                fontWeight: 300
+            }
         }
     });
     theme = responsiveFontSizes(theme);
@@ -45,19 +50,29 @@ const Resume = () => {
             <div>
                 <NavBar sections={sections} isRu={isRu()} onLangChange={setLang}/>
                 <section id="profile" className="resume-section">
-                    <Profile userInfo={resume.user} isRu={isRu()}/>
+                    <Container maxWidth="md">
+                        <Profile userInfo={resume.user} isRu={isRu()}/>
+                    </Container>
                 </section>
                 <section id="experience" className="resume-section resume-section-even">
-                    <Experience experienceList={resume.experience} isRu={isRu()}/>
+                    <Container maxWidth="md">
+                        <Experience experienceList={resume.experience} isRu={isRu()}/>
+                    </Container>
                 </section>
                 <section id="skills" className="resume-section">
-                    <Skills/>
+                    <Container maxWidth="md">
+                        <Skills isRu={isRu()}/>
+                    </Container>
                 </section>
                 <section id="education" className="resume-section resume-section-even">
-                    <Education isRu={isRu()}/>
+                    <Container maxWidth="md">
+                        <Education isRu={isRu()}/>
+                    </Container>
                 </section>
                 <section id="contact" className="resume-section">
-                    <Contact isRu={isRu()}/>
+                    <Container maxWidth="md">
+                        <Contact isRu={isRu()}/>
+                    </Container>
                 </section>
             </div>
         </ThemeProvider>

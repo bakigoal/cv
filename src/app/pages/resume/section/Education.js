@@ -1,9 +1,12 @@
 import React from 'react';
-import {Container} from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
 const Education = ({isRu}) => {
     return (
-        <Container>
+        <>
+            <Typography variant='h3'>
+                {isRu ? 'Образование' : 'Education'}
+            </Typography>
             <h2 className="mb-4">Университет</h2>
             <div className="resume-item d-flex flex-column flex-md-row mb-5">
                 <div className="resume-content mr-auto">
@@ -74,7 +77,7 @@ const Education = ({isRu}) => {
                     <span className="text-primary">Март 2016</span>
                 </div>
             </div>
-        </Container>
+        </>
     );
 };
 

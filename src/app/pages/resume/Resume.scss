@@ -1,9 +1,13 @@
 @import "../../../shared/style/variables";
 
 .resume-section {
-  padding-top: 4rem;
+  padding-top: 5rem;
   min-height: 100vh;
   background-color: $oddSectionColor;
+
+  @media screen and (min-width: $width-small) {
+    padding-top: 7rem;
+  }
 }
 
 .resume-section-even {

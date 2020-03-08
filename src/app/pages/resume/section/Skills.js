@@ -1,10 +1,12 @@
 import React from 'react';
-import {Container} from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
 const Skills = ({isRu}) => {
     return (
-        <Container>
-            <h2 className="mb-5">Навыки</h2>
+        <>
+            <Typography variant='h3'>
+                {isRu ? 'Навыки' : 'Skills'}
+            </Typography>
             <ul className="fa-ul mb-0">
                 <li>
                     <i className="fa-li fa fa-check"></i>
@@ -34,7 +36,7 @@ const Skills = ({isRu}) => {
                     <b>ОС:</b> Windows, Linux
                 </li>
             </ul>
-        </Container>
+        </>
     );
 };
 

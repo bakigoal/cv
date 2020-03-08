@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container} from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
 const Experience = ({experienceList, isRu}) => {
 
@@ -10,11 +10,14 @@ const Experience = ({experienceList, isRu}) => {
     ));
 
     return (
-        <Container>
+        <>
+            <Typography variant='h3'>
+                {isRu ? 'Опыт работы' : 'Experience'}
+            </Typography>
             <ul>
                 {companies}
             </ul>
-        </Container>
+        </>
     );
 };
 

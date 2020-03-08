@@ -8,7 +8,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
 import './NavBar.scss';
 import styleVariables from '../../../shared/style/variables.scss'
-import LanguageMenu from "../menu/LanguageMenu";
+import LanguageMenu from "../language-menu/LanguageMenu";
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
@@ -80,7 +80,7 @@ const NavBar = ({sections, isRu, onLangChange: updateLanguage}) => {
             {/* mobile */}
             <Hidden smUp implementation="css">
                 <AppBar className="mobile-app-bar">
-                    <Container>
+                    <Container maxWidth="md">
                         <Toolbar disableGutters>
                             <IconButton
                                 color="inherit"
@@ -104,7 +104,7 @@ const NavBar = ({sections, isRu, onLangChange: updateLanguage}) => {
             {/* desktop */}
             <Hidden xsDown implementation="css">
                 <AppBar className="desktop-app-bar">
-                    <Container>
+                    <Container maxWidth="md">
                         <Toolbar disableGutters>
                             <Scrollspy items={sectionPaths} currentClassName='active-nav' className="scroll-spy">
                                 {sections.map((nav, i) => (

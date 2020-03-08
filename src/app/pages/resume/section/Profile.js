@@ -1,12 +1,14 @@
 import React from 'react';
-import {Container} from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
 const Profile = ({userInfo, isRu}) => {
     return (
-        <Container>
-            <h1>{isRu?'Профиль':'Profile'}</h1>
+        <>
+            <Typography variant='h3'>
+                {isRu ? 'Профиль' : 'Profile'}
+            </Typography>
             <h3>{userInfo.firstName} {userInfo.lastName}</h3>
-        </Container>
+        </>
     );
 };
 
