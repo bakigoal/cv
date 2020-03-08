@@ -5,15 +5,17 @@ import {Container} from '@material-ui/core';
 import Header from './layouts/header/Header';
 import Resume from './layouts/resume/Resume';
 import navigation from '../static/navigation.json';
+import styleVariables from '../shared/style/variables.scss';
 
 function App() {
+    console.log(styleVariables);
     let theme = createMuiTheme({
         palette: {
             primary: {
-                main: '#1B242F'
+                main: styleVariables.primaryColor
             },
             secondary: {
-                main: '#e31b6d'
+                main: styleVariables.secondaryColor
             }
         },
         typography: {

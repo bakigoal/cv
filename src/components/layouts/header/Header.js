@@ -6,13 +6,14 @@ import {Container, Hidden, IconButton, Link, makeStyles} from '@material-ui/core
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
-import './Header.css';
+import './Header.scss';
+import styleVariables from '../../../shared/style/variables.scss'
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
-        backgroundColor: '#1B242F',
+        backgroundColor: styleVariables.primaryColor,
         color: '#fafafa',
-        borderBottom: '3px solid #04c2c9',
+        borderBottom: '3px solid '+ styleVariables.cyanColor,
         textAlign: 'center'
     }
 }));
@@ -61,7 +62,7 @@ const Header = ({sections}) => {
         <header>
             {/* mobile */}
             <Hidden smUp implementation="css">
-                <AppBar>
+                <AppBar className="mobile-app-bar">
                     <Container>
                         <Toolbar>
                             <div style={{flex: "1"}}/>

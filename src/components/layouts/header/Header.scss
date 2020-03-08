@@ -1,0 +1,27 @@
+@import "../../../shared/style/variables.scss";
+
+div.active-nav, a.active-nav {
+  color: $secondaryColor;
+}
+
+.desktop-app-bar {
+  border-bottom: 3px solid $cyanColor;
+  height: 4rem;
+
+  .desktop-app-bar-link {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+}
+
+.mobile-app-bar {
+  border-bottom: 3px solid $cyanColor;
+  height: 4rem;
+}
+
+
+.scroll-spy {
+  padding: 0
+}
