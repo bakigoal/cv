@@ -41,34 +41,35 @@ const Skills = () => {
                 <ul className="fa-ul mb-0">
                     <li>
                         <i className="fa-li fa fa-check"></i>
-                        <b>ТЕХНОЛОГИИ &amp; ФРЕЙМВОРКИ:</b> Java EE, JSP, Servlet, JAX-RS, SOAP, REST, Spring (Core, MVC,
+                        <b>ТЕХНОЛОГИИ &amp; ФРЕЙМВОРКИ:</b> Java EE, JSP, Servlet, JAX-RS, SOAP, REST, Spring (Core,
+                        MVC,
                         Security),
                         JDBC, ORM (Hibernate), Vaadin, BIRT, SWING, JavaFX
-  </li>
+                    </li>
                     <li>
                         <i className="fa-li fa fa-check"></i>
                         <b>ВЕБ:</b> HTML, CSS, JavaScript, AngularJS
-  </li>
+                    </li>
                     <li>
                         <i className="fa-li fa fa-check"></i>
                         <b>СУБД:</b> PostgreSQL, MySQL
-  </li>
+                    </li>
                     <li>
                         <i className="fa-li fa fa-check"></i>
                         <b>DEVELOPMENT TOOLS:</b> Gradle, Maven, Git, Jira, Redmine
-  </li>
+                    </li>
                     <li>
                         <i className="fa-li fa fa-check"></i>
                         <b>IDE:</b> IntelliJ IDEA, Netbeans, Eclipse , Android Studio
-  </li>
+                    </li>
                     <li>
                         <i className="fa-li fa fa-check"></i>
                         <b>ОС:</b> Windows, Linux
-  </li>
+                    </li>
                 </ul>
             </div>
         </section>
     );
-}
+};
 
 export default Skills;

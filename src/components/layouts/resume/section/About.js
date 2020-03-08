@@ -6,6 +6,6 @@ const About = ({ userInfo }) => {
             <h3>{userInfo.firstName} {userInfo.lastName}</h3>
         </section>
     );
-}
+};
 
 export default About;

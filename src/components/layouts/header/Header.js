@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Container, Hidden, IconButton, Link, makeStyles } from '@material-ui/core';
+import {Container, Hidden, IconButton, Link, makeStyles} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
@@ -28,12 +28,12 @@ const styles = {
         paddingRight: '2rem',
         cursor: 'pointer'
     },
-    scrollspy: {
+    scrollSpy: {
         padding: 0
     }
 };
 
-const Header = ({ navigation }) => {
+const Header = ({ sections}) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -41,11 +41,11 @@ const Header = ({ navigation }) => {
     });
 
     const handleDrawerToggle = () => {
-        setState({ ...state, drawerVisible: !state.drawerVisible });
-    }
+        setState({...state, drawerVisible: !state.drawerVisible});
+    };
 
     const hideDrawer = () => {
-        setState({ ...state, drawerVisible: false });
+        setState({...state, drawerVisible: false});
     };
 
     const changeSection = path => {
@@ -57,12 +57,14 @@ const Header = ({ navigation }) => {
                 behavior: 'smooth'
             });
         }
-    }
+    };
+
+    const sectionPaths = sections.map(nav => nav.path.replace('#', ''));
 
     const drawer = () => (
         <div role="presentation" onClick={hideDrawer}>
-            <Scrollspy items={sections} currentClassName='active-nav' style={styles.scrollspy}>
-                {navigation.map(nav => (
+            <Scrollspy items={sectionPaths} currentClassName='active-nav' style={styles.scrollSpy}>
+                {sections.map(nav => (
                     <div key={nav.path} onClick={() => changeSection(nav.path)}>
                         <Button color="inherit">{nav.name}</Button>
                     </div>
@@ -71,8 +73,6 @@ const Header = ({ navigation }) => {
         </div>
     );
 
-    const sections = navigation.map(nav => nav.path.replace('#', ''));
-
     return (
         <header>
             {/* mobile */}
@@ -80,19 +80,20 @@ const Header = ({ navigation }) => {
                 <AppBar>
                     <Container>
                         <Toolbar>
-                            <div style={{ flex: "1" }}></div>
+                            <div style={{flex: "1"}}/>
                             <IconButton
                                 color="inherit"
                                 aria-label="open drawer"
                                 edge="end"
                                 size="medium"
-                                onClick={handleDrawerToggle} >
-                                <MenuIcon />
+                                onClick={handleDrawerToggle}>
+                                <MenuIcon/>
                             </IconButton>
                         </Toolbar>
                     </Container>
                 </AppBar>
-                <Drawer anchor="top" open={state.drawerVisible} onClose={hideDrawer} variant="temporary" classes={{ paper: classes.drawerPaper }}>
+                <Drawer anchor="top" open={state.drawerVisible} onClose={hideDrawer} variant="temporary"
+                        classes={{paper: classes.drawerPaper}}>
                     {drawer()}
                 </Drawer>
             </Hidden>
@@ -102,12 +103,12 @@ const Header = ({ navigation }) => {
                 <AppBar className="header-app-bar" style={styles.desktopAppBar}>
                     <Container>
                         <Toolbar>
-                            <Scrollspy items={sections} currentClassName='active-nav'>
-                                {navigation.map((nav, i) => (
+                            <Scrollspy items={sectionPaths} currentClassName='active-nav'>
+                                {sections.map((nav, i) => (
                                     <Link key={i}
-                                        color="inherit"
-                                        style={styles.desktopAppBarLink}
-                                        onClick={() => changeSection(nav.path)} >
+                                          color="inherit"
+                                          style={styles.desktopAppBarLink}
+                                          onClick={() => changeSection(nav.path)}>
                                         {nav.name}
                                     </Link>
                                 ))}
@@ -118,6 +119,6 @@ const Header = ({ navigation }) => {
             </Hidden>
         </header>
     );
-}
+};
 
 export default Header;

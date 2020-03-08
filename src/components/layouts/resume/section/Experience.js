@@ -15,6 +15,6 @@ const Experience = ({ experienceList }) => {
             </ul>
         </section>
     );
-}
+};
 
 export default Experience;

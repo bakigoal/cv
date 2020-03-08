@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import About from './section/About';
 import Experience from './section/Experience';
 import Skills from './section/Skills';
@@ -12,11 +12,11 @@ class Resume extends Component {
     render() {
         return (
             <div>
-                <About userInfo={resume.user} />
-                <Experience experienceList={resume.experience} />
-                <Skills />
-                <Education />
-                <Interests />
+                <About userInfo={resume.user}/>
+                <Experience experienceList={resume.experience}/>
+                <Skills/>
+                <Education/>
+                <Interests/>
             </div>
         );
     }
