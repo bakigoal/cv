@@ -18,6 +18,12 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+/**
+ * Navigation bar
+ *
+ * @param sections array example:
+ * [{path: "#about", name: "About"},{path: "#experience", name: "Experience"}]
+ */
 const NavBar = ({sections}) => {
     const classes = useStyles();
 
