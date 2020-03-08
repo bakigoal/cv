@@ -12,7 +12,9 @@ import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/c
 import CssBaseline from "@material-ui/core/CssBaseline";
 import styleVariables from "../../../shared/style/variables.scss";
 
-const Resume = () => {
+const Resume = (props) => {
+    const isRu = props.match.path === '/ru';
+
     let theme = createMuiTheme({
         palette: {
             primary: {
@@ -28,13 +30,14 @@ const Resume = () => {
     });
     theme = responsiveFontSizes(theme);
 
+    const sections = isRu ? navigation.sectionsRu: navigation.sections;
 
     return (
 
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <div>
-                <NavBar sections={navigation.sections}/>
+                <NavBar sections={sections}/>
                 <section id="about" className="resume-section">
                     <About userInfo={resume.user}/>
                 </section>

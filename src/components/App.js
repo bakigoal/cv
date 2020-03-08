@@ -7,8 +7,9 @@ function App() {
 
     return (
         <RouterSwitch>
-            <RouterRoute exact path='/' component={Resume}/>
             <RouterRoute exact path='/portfolio' component={Portfolio}/>
+            <RouterRoute exact path='/ru' component={Resume}/>
+            <RouterRoute exact path='/' component={Resume}/>
         </RouterSwitch>
     );
 }

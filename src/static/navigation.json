@@ -20,5 +20,27 @@
       "path": "#interests",
       "name": "Interests"
     }
+  ],
+  "sectionsRu": [
+    {
+      "path": "#about",
+      "name": "Обо мне"
+    },
+    {
+      "path": "#experience",
+      "name": "Опыт работы"
+    },
+    {
+      "path": "#skills",
+      "name": "Скиллы"
+    },
+    {
+      "path": "#education",
+      "name": "Образование"
+    },
+    {
+      "path": "#interests",
+      "name": "Интересы"
+    }
   ]
 }
