@@ -13,3 +13,12 @@
 .resume-section-even {
   background-color: $evenSectionColor;
 }
+
+.resume-section-last {
+  background-color: $darkColor;
+  min-height: 93vh;
+  padding-top: 2rem;
+  h3 {
+    color: $lightColor;
+  }
+}

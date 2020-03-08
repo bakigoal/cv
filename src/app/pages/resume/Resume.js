@@ -69,7 +69,7 @@ const Resume = () => {
                         <Education isRu={isRu()}/>
                     </Container>
                 </section>
-                <section id="contact" className="resume-section">
+                <section id="contact" className="resume-section resume-section-last">
                     <Container maxWidth="md">
                         <Contact isRu={isRu()}/>
                     </Container>

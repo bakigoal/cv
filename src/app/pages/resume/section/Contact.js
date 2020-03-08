@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 const Contact = ({isRu}) => {
     return (
         <>
-            <Typography variant='h3'>
+            <Typography variant='h3' className="resume-section-title">
                 {isRu ? 'Интересы' : 'Contact'}
             </Typography>
             <p>В свободное от работы время стараюсь вести активный образ жизни. Играю в футбол, бегаю, катаюсь на

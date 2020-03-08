@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 const Skills = ({isRu}) => {
     return (
         <>
-            <Typography variant='h3'>
+            <Typography variant='h3' className="resume-section-title">
                 {isRu ? 'Навыки' : 'Skills'}
             </Typography>
             <ul className="fa-ul mb-0">

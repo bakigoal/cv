@@ -11,7 +11,7 @@ const Experience = ({experienceList, isRu}) => {
 
     return (
         <>
-            <Typography variant='h3'>
+            <Typography variant='h3' className="resume-section-title">
                 {isRu ? 'Опыт работы' : 'Experience'}
             </Typography>
             <ul>
