@@ -39,6 +39,14 @@ const NavBar = ({sections}) => {
         setState({...state, drawerVisible: false});
     };
 
+    const navigate = path => {
+        if (path.startsWith('#')) {
+            changeSection(path);
+            return;
+        }
+        window.location.href=path;
+    };
+
     const changeSection = path => {
         const anchor = document.querySelector(path);
         if (anchor) {
@@ -56,7 +64,7 @@ const NavBar = ({sections}) => {
         <div role="presentation" onClick={hideDrawer}>
             <Scrollspy items={sectionPaths} currentClassName='active-nav' className="scroll-spy">
                 {sections.map(nav => (
-                    <div key={nav.path} onClick={() => changeSection(nav.path)}>
+                    <div key={nav.path} onClick={() => navigate(nav.path)}>
                         <Button color="inherit">{nav.name}</Button>
                     </div>
                 ))}
@@ -99,7 +107,7 @@ const NavBar = ({sections}) => {
                                     <Link key={i}
                                           color="inherit"
                                           className="desktop-app-bar-link"
-                                          onClick={() => changeSection(nav.path)}>
+                                          onClick={() => navigate(nav.path)}>
                                         {nav.name}
                                     </Link>
                                 ))}
