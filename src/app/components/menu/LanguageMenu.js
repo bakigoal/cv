@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import TranslateIcon from '@material-ui/icons/Translate';
 import {Hidden, makeStyles} from "@material-ui/core";
 import blueGrey from '@material-ui/core/colors/blueGrey';
-import styleVariables from "../../shared/style/variables.scss";
+import styleVariables from "../../../shared/style/variables.scss";
 import './LanguageMenu.scss';
 
 const useStyles = makeStyles(theme => ({

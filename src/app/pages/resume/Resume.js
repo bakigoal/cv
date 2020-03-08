@@ -7,7 +7,7 @@ import Interests from './section/Interests';
 import resumeEn from '../../../static/resume-en.json';
 import resumeRu from '../../../static/resume-ru.json';
 import './Resume.scss';
-import NavBar from "../../navbar/NavBar";
+import NavBar from "../../components/navbar/NavBar";
 import navigation from "../../../static/navigation";
 import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";

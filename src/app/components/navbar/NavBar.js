@@ -7,8 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
 import './NavBar.scss';
-import styleVariables from '../../shared/style/variables.scss'
-import LanguageMenu from "./LanguageMenu";
+import styleVariables from '../../../shared/style/variables.scss'
+import LanguageMenu from "../menu/LanguageMenu";
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
@@ -24,6 +24,8 @@ const useStyles = makeStyles(theme => ({
  *
  * @param sections array example:
  * [{path: "#about", name: "About"},{path: "#experience", name: "Experience"}]
+ * @param isRu
+ * @param updateLanguage
  */
 const NavBar = ({sections, isRu, onLangChange: updateLanguage}) => {
     const classes = useStyles();
