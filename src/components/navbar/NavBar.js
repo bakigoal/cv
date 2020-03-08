@@ -6,19 +6,19 @@ import {Container, Hidden, IconButton, Link, makeStyles} from '@material-ui/core
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
-import './Header.scss';
-import styleVariables from '../../../shared/style/variables.scss'
+import './NavBar.scss';
+import styleVariables from '../../shared/style/variables.scss'
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
         backgroundColor: styleVariables.primaryColor,
         color: '#fafafa',
-        borderBottom: '3px solid '+ styleVariables.cyanColor,
+        borderBottom: '3px solid ' + styleVariables.cyanColor,
         textAlign: 'center'
     }
 }));
 
-const Header = ({sections}) => {
+const NavBar = ({sections}) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -87,8 +87,8 @@ const Header = ({sections}) => {
             <Hidden xsDown implementation="css">
                 <AppBar className="desktop-app-bar">
                     <Container>
-                        <Toolbar>
-                            <Scrollspy items={sectionPaths} currentClassName='active-nav'>
+                        <Toolbar disableGutters>
+                            <Scrollspy items={sectionPaths} currentClassName='active-nav' className="scroll-spy">
                                 {sections.map((nav, i) => (
                                     <Link key={i}
                                           color="inherit"
@@ -106,4 +106,4 @@ const Header = ({sections}) => {
     );
 };
 
-export default Header;
+export default NavBar;

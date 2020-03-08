@@ -6,12 +6,15 @@ import Education from './section/Education';
 import Interests from './section/Interests';
 import resume from '../../../static/resume.json';
 import './Resume.scss';
+import NavBar from "../../navbar/NavBar";
+import navigation from "../../../static/navigation";
 
 class Resume extends Component {
 
     render() {
         return (
             <div>
+                <NavBar sections={navigation.sections}/>
                 <section id="about" className="resume-section">
                     <About userInfo={resume.user}/>
                 </section>
