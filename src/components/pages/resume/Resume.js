@@ -13,7 +13,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import styleVariables from "../../../shared/style/variables.scss";
 
 const Resume = (props) => {
-    const isRu = props.match.path === '/ru';
+    const isRu = props.match.path.startsWith('/ru');
 
     let theme = createMuiTheme({
         palette: {
@@ -37,7 +37,7 @@ const Resume = (props) => {
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <div>
-                <NavBar sections={sections}/>
+                <NavBar sections={sections} isRu={isRu}/>
                 <section id="about" className="resume-section">
                     <About userInfo={resume.user}/>
                 </section>

@@ -25,3 +25,17 @@ div.active-nav, a.active-nav {
 .scroll-spy {
   padding: 0
 }
+
+.select-language {
+  a {
+    text-decoration: none;
+    color: #FAFAFA;
+  }
+  a:hover {
+    color: $secondaryColor;
+  }
+  span {
+    color: $secondaryColor;
+
+  }
+}

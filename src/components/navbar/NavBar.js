@@ -8,6 +8,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
 import './NavBar.scss';
 import styleVariables from '../../shared/style/variables.scss'
+import {Link as RouterLink} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
  * @param sections array example:
  * [{path: "#about", name: "About"},{path: "#experience", name: "Experience"}]
  */
-const NavBar = ({sections}) => {
+const NavBar = ({sections, isRu}) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -44,7 +45,7 @@ const NavBar = ({sections}) => {
             changeSection(path);
             return;
         }
-        window.location.href=path;
+        window.location.href = path;
     };
 
     const changeSection = path => {
@@ -72,6 +73,11 @@ const NavBar = ({sections}) => {
         </div>
     );
 
+    const languageLinks = () => {
+        return isRu ? (<div className="select-language"><span>RU </span>/ <RouterLink to='/'>ENG</RouterLink></div>)
+            : (<div className="select-language"><RouterLink to='/ru'>RU</RouterLink> / <span> ENG</span></div>);
+    };
+
     return (
         <header>
             {/* mobile */}
@@ -79,7 +85,6 @@ const NavBar = ({sections}) => {
                 <AppBar className="mobile-app-bar">
                     <Container>
                         <Toolbar>
-                            <div style={{flex: "1"}}/>
                             <IconButton
                                 color="inherit"
                                 aria-label="open drawer"
@@ -88,6 +93,8 @@ const NavBar = ({sections}) => {
                                 onClick={handleDrawerToggle}>
                                 <MenuIcon/>
                             </IconButton>
+                            <div style={{flex: "1"}}/>
+                            {languageLinks()}
                         </Toolbar>
                     </Container>
                 </AppBar>
@@ -112,6 +119,8 @@ const NavBar = ({sections}) => {
                                     </Link>
                                 ))}
                             </Scrollspy>
+                            <div style={{flex: "1"}}/>
+                            {languageLinks()}
                         </Toolbar>
                     </Container>
                 </AppBar>
