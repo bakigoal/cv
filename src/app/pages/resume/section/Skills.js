@@ -1,12 +1,12 @@
 import React from 'react';
-import Typography from "@material-ui/core/Typography";
+import SectionTitle from "../../../components/section-title/SectionTitle";
 
 const Skills = ({isRu}) => {
     return (
         <>
-            <Typography variant='h3' className="resume-section-title">
-                {isRu ? 'Навыки' : 'Skills'}
-            </Typography>
+            <SectionTitle title={isRu ? 'Навыки' : 'Skills'}
+                          quote={"Life without knowledge is death in disguise."}
+                          author={"Talib Kweli"}/>
             <ul className="fa-ul mb-0">
                 <li>
                     <i className="fa-li fa fa-check"></i>

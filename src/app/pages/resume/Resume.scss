@@ -18,11 +18,12 @@
   background-color: $darkColor;
   min-height: 93vh;
   padding-top: 2rem;
+
   h3 {
     color: $lightColor;
   }
-}
 
-.resume-section-title {
-  text-align: center;
+  hr {
+    border-top: 1px solid #eee;
+  }
 }

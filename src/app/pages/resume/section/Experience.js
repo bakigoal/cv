@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from "@material-ui/core/Typography";
+import SectionTitle from "../../../components/section-title/SectionTitle";
 
 const Experience = ({experienceList, isRu}) => {
 
@@ -11,9 +11,9 @@ const Experience = ({experienceList, isRu}) => {
 
     return (
         <>
-            <Typography variant='h3' className="resume-section-title">
-                {isRu ? 'Опыт работы' : 'Experience'}
-            </Typography>
+            <SectionTitle title={isRu ? 'Опыт работы' : 'Experience'}
+                          quote={"Protons give an atom its identity, electrons its personality."}
+                          author={"Bill Bryson, A short history of nearly everything"}/>
             <ul>
                 {companies}
             </ul>

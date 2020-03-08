@@ -1,15 +1,11 @@
 import React from 'react';
-import Typography from "@material-ui/core/Typography";
+import SectionTitle from "../../../components/section-title/SectionTitle";
 
 const Profile = ({userInfo, isRu}) => {
     return (
         <>
-            <Typography variant='h3' className="resume-section-title">
-                {isRu ? 'Профиль' : 'Profile'}
-            </Typography>
-            <Typography variant='subtitle1'>
-                {userInfo.title}
-            </Typography>
+            <SectionTitle title={isRu ? 'Профиль' : 'Profile'}
+                          subtitle={userInfo.title}/>
             <h3>{userInfo.firstName} {userInfo.lastName}</h3>
         </>
     );
