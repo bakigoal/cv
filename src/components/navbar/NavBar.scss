@@ -30,7 +30,7 @@ div.active-nav, a.active-nav {
 .select-language {
   a {
     text-decoration: none;
-    color: #FAFAFA;
+    color: $lightColor;
   }
   a:hover {
     color: $secondaryColor;

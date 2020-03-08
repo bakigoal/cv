@@ -8,12 +8,12 @@ import Drawer from '@material-ui/core/Drawer';
 import Scrollspy from 'react-scrollspy';
 import './NavBar.scss';
 import styleVariables from '../../shared/style/variables.scss'
-import {Link as RouterLink} from 'react-router-dom';
+import LanguageMenu from "./LanguageMenu";
 
 const useStyles = makeStyles(theme => ({
     drawerPaper: {
         backgroundColor: styleVariables.primaryColor,
-        color: '#fafafa',
+        color: styleVariables.lightColor,
         borderBottom: '3px solid ' + styleVariables.cyanColor,
         textAlign: 'center'
     }
@@ -73,9 +73,12 @@ const NavBar = ({sections, isRu}) => {
         </div>
     );
 
-    const languageLinks = () => {
-        return isRu ? (<div className="select-language"><span>RU </span>/ <RouterLink to='/'>ENG</RouterLink></div>)
-            : (<div className="select-language"><RouterLink to='/ru'>RU</RouterLink> / <span> ENG</span></div>);
+    const updateLanguage = lang => {
+        if (lang === "ru" && !isRu) {
+            navigate("/ru");
+        } else if (lang === "en" && isRu) {
+            navigate("/");
+        }
     };
 
     return (
@@ -94,7 +97,7 @@ const NavBar = ({sections, isRu}) => {
                                 <MenuIcon/>
                             </IconButton>
                             <div style={{flex: "1"}}/>
-                            {languageLinks()}
+                            <LanguageMenu isRu={isRu} onSelect={updateLanguage}/>
                         </Toolbar>
                     </Container>
                 </AppBar>
@@ -120,7 +123,7 @@ const NavBar = ({sections, isRu}) => {
                                 ))}
                             </Scrollspy>
                             <div style={{flex: "1"}}/>
-                            {languageLinks()}
+                            <LanguageMenu isRu={isRu} onSelect={updateLanguage}/>
                         </Toolbar>
                     </Container>
                 </AppBar>

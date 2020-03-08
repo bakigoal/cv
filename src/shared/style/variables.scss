@@ -1,8 +1,10 @@
-$primaryColor: #1B242F;
+$lightColor: #eceff1;
+$darkColor: #263238;
+$primaryColor: $darkColor;
 $secondaryColor: #e31b6d;
 $cyanColor: #04c2c9;
-$oddSectionColor: #FAFAFA;
-$evenSectionColor: #F5F5F5;
+$oddSectionColor: $lightColor;
+$evenSectionColor: #cfd8dc;
 
 :export {
   primaryColor: $primaryColor;
@@ -10,4 +12,5 @@ $evenSectionColor: #F5F5F5;
   cyanColor: $cyanColor;
   oddSectionColor: $oddSectionColor;
   evenSectionColor: $evenSectionColor;
+  lightColor: $lightColor;
 }
