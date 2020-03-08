@@ -4,7 +4,8 @@ import Experience from './section/Experience';
 import Skills from './section/Skills';
 import Education from './section/Education';
 import Interests from './section/Interests';
-import resume from '../../../static/resume.json';
+import resumeEn from '../../../static/resume-en.json';
+import resumeRu from '../../../static/resume-ru.json';
 import './Resume.scss';
 import NavBar from "../../navbar/NavBar";
 import navigation from "../../../static/navigation";
@@ -30,7 +31,8 @@ const Resume = (props) => {
     });
     theme = responsiveFontSizes(theme);
 
-    const sections = isRu ? navigation.sectionsRu: navigation.sections;
+    const sections = isRu ? navigation.sectionsRu : navigation.sectionsEn;
+    const resume = isRu ? resumeRu : resumeEn;
 
     return (
 
