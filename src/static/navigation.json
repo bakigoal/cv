@@ -1,0 +1,7 @@
+[
+    { "path": "#about", "name": "About" },
+    { "path": "#experience", "name": "Experience" },
+    { "path": "#skills", "name": "Skills" },
+    { "path": "#education", "name": "Education" },
+    { "path": "#interests", "name": "Interests" }
+]
