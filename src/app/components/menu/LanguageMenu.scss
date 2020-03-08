@@ -1,7 +1,11 @@
-.Mui-selected {
-  background-color: #455a64 !important;
-}
-
 .MuiMenuItem-root {
   justify-content: flex-end !important;
+}
+
+.MuiListItem-button:hover:not(.Mui-selected), .Mui-focusVisible:not(.Mui-selected) {
+  background-color: #37474f !important;
+}
+
+.Mui-selected {
+  background-color: #455a64 !important;
 }

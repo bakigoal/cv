@@ -54,7 +54,7 @@ export default function LanguageMenu({isRu, onSelect}) {
                 anchorEl={anchorEl}
                 keepMounted
                 open={Boolean(anchorEl)}
-                variant="menu"
+                variant="selectedMenu"
                 onClose={handleClose}>
                 <MenuItem onClick={() => selectLanguage("en")} selected={!isRu}>English</MenuItem>
                 <MenuItem onClick={() => selectLanguage("ru")} selected={isRu}>Русский</MenuItem>
