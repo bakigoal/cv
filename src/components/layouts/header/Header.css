@@ -1,3 +1,19 @@
 div.active-nav, a.active-nav {
     color: #e31b6d
 }
+
+.desktop-app-bar {
+    border-bottom: 3px solid #04c2c9;
+    height: 4rem;
+}
+
+.desktop-app-bar-link {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.scroll-spy {
+    padding: 0
+}

@@ -17,23 +17,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const styles = {
-    desktopAppBar: {
-        borderBottom: '3px solid #04c2c9',
-        height: '4rem'
-    },
-    desktopAppBarLink: {
-        textDecoration: 'none',
-        textTransform: 'uppercase',
-        paddingRight: '2rem',
-        cursor: 'pointer'
-    },
-    scrollSpy: {
-        padding: 0
-    }
-};
-
-const Header = ({ sections}) => {
+const Header = ({sections}) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -63,7 +47,7 @@ const Header = ({ sections}) => {
 
     const drawer = () => (
         <div role="presentation" onClick={hideDrawer}>
-            <Scrollspy items={sectionPaths} currentClassName='active-nav' style={styles.scrollSpy}>
+            <Scrollspy items={sectionPaths} currentClassName='active-nav' className="scroll-spy">
                 {sections.map(nav => (
                     <div key={nav.path} onClick={() => changeSection(nav.path)}>
                         <Button color="inherit">{nav.name}</Button>
@@ -100,14 +84,14 @@ const Header = ({ sections}) => {
 
             {/* desktop */}
             <Hidden xsDown implementation="css">
-                <AppBar className="header-app-bar" style={styles.desktopAppBar}>
+                <AppBar className="desktop-app-bar">
                     <Container>
                         <Toolbar>
                             <Scrollspy items={sectionPaths} currentClassName='active-nav'>
                                 {sections.map((nav, i) => (
                                     <Link key={i}
                                           color="inherit"
-                                          style={styles.desktopAppBarLink}
+                                          className="desktop-app-bar-link"
                                           onClick={() => changeSection(nav.path)}>
                                         {nav.name}
                                     </Link>
