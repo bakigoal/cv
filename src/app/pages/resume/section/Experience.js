@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "@material-ui/core";
 
-const Experience = ({experienceList}) => {
+const Experience = ({experienceList, isRu}) => {
 
     let companies = experienceList.map((experience, i) => (
         <li key={i}>

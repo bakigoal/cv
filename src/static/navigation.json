@@ -1,8 +1,8 @@
 {
   "sectionsEn": [
     {
-      "path": "#about",
-      "name": "About"
+      "path": "#profile",
+      "name": "Profile"
     },
     {
       "path": "#experience",
@@ -17,14 +17,14 @@
       "name": "Education"
     },
     {
-      "path": "#interests",
-      "name": "Interests"
+      "path": "#contact",
+      "name": "Contact"
     }
   ],
   "sectionsRu": [
     {
-      "path": "#about",
-      "name": "Обо мне"
+      "path": "#profile",
+      "name": "Профиль"
     },
     {
       "path": "#experience",
@@ -32,15 +32,15 @@
     },
     {
       "path": "#skills",
-      "name": "Скиллы"
+      "name": "Навыки"
     },
     {
       "path": "#education",
       "name": "Образование"
     },
     {
-      "path": "#interests",
-      "name": "Интересы"
+      "path": "#contact",
+      "name": "Контакты"
     }
   ]
 }

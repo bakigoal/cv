@@ -1,9 +1,9 @@
 import React from 'react';
-import About from './section/About';
+import Profile from './section/Profile';
 import Experience from './section/Experience';
 import Skills from './section/Skills';
 import Education from './section/Education';
-import Interests from './section/Interests';
+import Contact from './section/Contact';
 import resumeEn from '../../../static/resume-en.json';
 import resumeRu from '../../../static/resume-ru.json';
 import './Resume.scss';
@@ -17,7 +17,7 @@ const LANGUAGES = ['RU', 'EN'];
 
 const Resume = () => {
 
-    let [lang, setLang] = React.useState(LANGUAGES[0]);
+    let [lang, setLang] = React.useState(LANGUAGES[1]);
     const isRu = () => lang.toUpperCase() === LANGUAGES[0];
 
     let theme = createMuiTheme({
@@ -44,20 +44,20 @@ const Resume = () => {
             <CssBaseline/>
             <div>
                 <NavBar sections={sections} isRu={isRu()} onLangChange={setLang}/>
-                <section id="about" className="resume-section">
-                    <About userInfo={resume.user}/>
+                <section id="profile" className="resume-section">
+                    <Profile userInfo={resume.user} isRu={isRu()}/>
                 </section>
                 <section id="experience" className="resume-section resume-section-even">
-                    <Experience experienceList={resume.experience}/>
+                    <Experience experienceList={resume.experience} isRu={isRu()}/>
                 </section>
                 <section id="skills" className="resume-section">
                     <Skills/>
                 </section>
                 <section id="education" className="resume-section resume-section-even">
-                    <Education/>
+                    <Education isRu={isRu()}/>
                 </section>
-                <section id="interests" className="resume-section">
-                    <Interests/>
+                <section id="contact" className="resume-section">
+                    <Contact isRu={isRu()}/>
                 </section>
             </div>
         </ThemeProvider>

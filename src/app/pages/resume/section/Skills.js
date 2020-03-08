@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "@material-ui/core";
 
-const Skills = () => {
+const Skills = ({isRu}) => {
     return (
         <Container>
             <h2 className="mb-5">Навыки</h2>

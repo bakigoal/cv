@@ -1,12 +1,13 @@
 import React from 'react';
 import {Container} from "@material-ui/core";
 
-const About = ({userInfo}) => {
+const Profile = ({userInfo, isRu}) => {
     return (
         <Container>
+            <h1>{isRu?'Профиль':'Profile'}</h1>
             <h3>{userInfo.firstName} {userInfo.lastName}</h3>
         </Container>
     );
 };
 
-export default About;
+export default Profile;

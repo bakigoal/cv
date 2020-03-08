@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
  * Navigation bar
  *
  * @param sections array example:
- * [{path: "#about", name: "About"},{path: "#experience", name: "Experience"}]
+ * [{path: "#about", name: "Profile"},{path: "#experience", name: "Experience"}]
  * @param isRu
  * @param updateLanguage
  */
