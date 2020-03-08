@@ -2,6 +2,7 @@
 
 div.active-nav, a.active-nav {
   color: $secondaryColor;
+  cursor: default !important;
 }
 
 .desktop-app-bar {
@@ -36,6 +37,6 @@ div.active-nav, a.active-nav {
   }
   span {
     color: $secondaryColor;
-
+    cursor: default !important;
   }
 }
