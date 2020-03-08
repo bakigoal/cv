@@ -1,4 +1,11 @@
+@import "../../../shared/style/variables";
+
 .resume-section {
-    padding-top: 4rem;
-    min-height: 100vh;
+  padding-top: 4rem;
+  min-height: 100vh;
+  background-color: $oddSectionColor;
+}
+
+.resume-section-even {
+  background-color: $evenSectionColor;
 }

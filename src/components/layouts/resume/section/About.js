@@ -1,8 +1,11 @@
 import React from 'react';
+import {Container} from "@material-ui/core";
 
 const About = ({userInfo}) => {
     return (
-        <h3>{userInfo.firstName} {userInfo.lastName}</h3>
+        <Container>
+            <h3>{userInfo.firstName} {userInfo.lastName}</h3>
+        </Container>
     );
 };
 

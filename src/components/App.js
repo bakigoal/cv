@@ -1,7 +1,6 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {createMuiTheme, responsiveFontSizes, ThemeProvider} from '@material-ui/core/styles';
-import {Container} from '@material-ui/core';
 import Header from './layouts/header/Header';
 import Resume from './layouts/resume/Resume';
 import navigation from '../static/navigation.json';
@@ -27,9 +26,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <Header sections={navigation.sections}/>
-            <Container>
-                <Resume/>
-            </Container>
+            <Resume/>
         </ThemeProvider>
     );
 }

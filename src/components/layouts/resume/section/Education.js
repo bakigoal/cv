@@ -1,8 +1,9 @@
 import React from 'react';
+import {Container} from "@material-ui/core";
 
 const Education = () => {
     return (
-        <div className="my-auto">
+        <Container>
             <h2 className="mb-4">Университет</h2>
             <div className="resume-item d-flex flex-column flex-md-row mb-5">
                 <div className="resume-content mr-auto">
@@ -40,7 +41,8 @@ const Education = () => {
             <div className="resume-item d-flex flex-column flex-md-row mb-3">
                 <div className="resume-content mr-auto">
                     <h5 className="mb-0">
-                        <a href="https://stepik.org/cert/108513" target="_blank" rel="noopener noreferrer">Введение в
+                        <a href="https://stepik.org/cert/108513" target="_blank" rel="noopener noreferrer">Введение
+                            в
                             Linux</a>
                     </h5>
                 </div>
@@ -72,8 +74,8 @@ const Education = () => {
                     <span className="text-primary">Март 2016</span>
                 </div>
             </div>
-        </div>
+        </Container>
     );
-}
+};
 
 export default Education;

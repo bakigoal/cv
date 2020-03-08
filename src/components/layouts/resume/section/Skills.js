@@ -1,9 +1,9 @@
 import React from 'react';
+import {Container} from "@material-ui/core";
 
 const Skills = () => {
     return (
-
-        <div className="my-auto">
+        <Container>
             <h2 className="mb-5">Навыки</h2>
             <ul className="fa-ul mb-0">
                 <li>
@@ -34,7 +34,7 @@ const Skills = () => {
                     <b>ОС:</b> Windows, Linux
                 </li>
             </ul>
-        </div>
+        </Container>
     );
 };
 

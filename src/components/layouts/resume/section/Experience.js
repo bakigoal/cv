@@ -1,4 +1,5 @@
 import React from 'react';
+import {Container} from "@material-ui/core";
 
 const Experience = ({experienceList}) => {
 
@@ -9,9 +10,11 @@ const Experience = ({experienceList}) => {
     ));
 
     return (
-        <ul>
-            {companies}
-        </ul>
+        <Container>
+            <ul>
+                {companies}
+            </ul>
+        </Container>
     );
 };
 
