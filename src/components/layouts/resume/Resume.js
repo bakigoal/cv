@@ -5,7 +5,7 @@ import Skills from './section/Skills';
 import Education from './section/Education';
 import Interests from './section/Interests';
 import resume from '../../../static/resume.json';
-import './Resume.css';
+import './Resume.scss';
 
 class Resume extends Component {
 
