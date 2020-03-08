@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import About from './section/About';
 import Experience from './section/Experience';
 import Skills from './section/Skills';
@@ -8,11 +8,31 @@ import resume from '../../../static/resume.json';
 import './Resume.scss';
 import NavBar from "../../navbar/NavBar";
 import navigation from "../../../static/navigation";
+import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import styleVariables from "../../../shared/style/variables.scss";
 
-class Resume extends Component {
+const Resume = () => {
+    let theme = createMuiTheme({
+        palette: {
+            primary: {
+                main: styleVariables.primaryColor
+            },
+            secondary: {
+                main: styleVariables.secondaryColor
+            }
+        },
+        typography: {
+            fontSize: 16,
+        }
+    });
+    theme = responsiveFontSizes(theme);
 
-    render() {
-        return (
+
+    return (
+
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
             <div>
                 <NavBar sections={navigation.sections}/>
                 <section id="about" className="resume-section">
@@ -31,8 +51,8 @@ class Resume extends Component {
                     <Interests/>
                 </section>
             </div>
-        );
-    }
-}
+        </ThemeProvider>
+    )
+};
 
 export default Resume;
