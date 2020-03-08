@@ -6,7 +6,6 @@ function App() {
 
     return (
         <RouterSwitch>
-            <RouterRoute exact path='/ru' component={Resume}/>
             <RouterRoute exact path='/' component={Resume}/>
         </RouterSwitch>
     );

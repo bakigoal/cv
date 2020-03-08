@@ -13,8 +13,12 @@ import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/c
 import CssBaseline from "@material-ui/core/CssBaseline";
 import styleVariables from "../../../shared/style/variables.scss";
 
-const Resume = (props) => {
-    const isRu = props.match.path.startsWith('/ru');
+const LANGUAGES = ['RU', 'EN'];
+
+const Resume = () => {
+
+    let [lang, setLang] = React.useState(LANGUAGES[0]);
+    const isRu = () => lang.toUpperCase() === LANGUAGES[0];
 
     let theme = createMuiTheme({
         palette: {
@@ -31,15 +35,15 @@ const Resume = (props) => {
     });
     theme = responsiveFontSizes(theme);
 
-    const sections = isRu ? navigation.sectionsRu : navigation.sectionsEn;
-    const resume = isRu ? resumeRu : resumeEn;
+    const sections = isRu() ? navigation.sectionsRu : navigation.sectionsEn;
+    const resume = isRu() ? resumeRu : resumeEn;
 
     return (
 
         <ThemeProvider theme={theme}>
             <CssBaseline/>
             <div>
-                <NavBar sections={sections} isRu={isRu}/>
+                <NavBar sections={sections} isRu={isRu()} onLangChange={setLang}/>
                 <section id="about" className="resume-section">
                     <About userInfo={resume.user}/>
                 </section>

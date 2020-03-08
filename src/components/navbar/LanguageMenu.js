@@ -7,14 +7,13 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import {Hidden, makeStyles} from "@material-ui/core";
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import styleVariables from "../../shared/style/variables.scss";
+import './LanguageMenu.scss';
 
 const useStyles = makeStyles(theme => ({
     menuPaper: {
-        backgroundColor: blueGrey[800],
-        width: '150px',
+        backgroundColor: blueGrey[900],
+        width: '140px',
         color: styleVariables.lightColor,
-        // border: '3px solid ' + styleVariables.cyanColor,
-        textAlign: 'center'
     },
     buttonStyle: {
         color: styleVariables.lightColor
@@ -38,14 +37,13 @@ export default function LanguageMenu({isRu, onSelect}) {
         handleClose();
         onSelect(lang);
     };
-    console.log(isRu);
 
     return (
         <>
             <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}
                     classes={{root: classes.buttonStyle}}>
-                <TranslateIcon/>
-                <Hidden xsDown implementation="css">
+                <TranslateIcon/>&nbsp;
+                <Hidden smDown implementation="css">
                     {isRu ? "РУССКИЙ" : "ENGLISH"}
                 </Hidden>
                 <ExpandMoreIcon/>

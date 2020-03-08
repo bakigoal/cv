@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
  * @param sections array example:
  * [{path: "#about", name: "About"},{path: "#experience", name: "Experience"}]
  */
-const NavBar = ({sections, isRu}) => {
+const NavBar = ({sections, isRu, onLangChange: updateLanguage}) => {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -73,21 +73,13 @@ const NavBar = ({sections, isRu}) => {
         </div>
     );
 
-    const updateLanguage = lang => {
-        if (lang === "ru" && !isRu) {
-            navigate("/ru");
-        } else if (lang === "en" && isRu) {
-            navigate("/");
-        }
-    };
-
     return (
         <header>
             {/* mobile */}
             <Hidden smUp implementation="css">
                 <AppBar className="mobile-app-bar">
                     <Container>
-                        <Toolbar>
+                        <Toolbar disableGutters>
                             <IconButton
                                 color="inherit"
                                 aria-label="open drawer"
