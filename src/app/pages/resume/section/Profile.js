@@ -12,12 +12,12 @@ const useStyles = makeStyles(theme => ({
     avatarLarge: {
         width: theme.spacing(32),
         height: theme.spacing(32),
-        border: '0.5rem solid ' + styleVariables.evenSectionColor
+        border: '0.5rem solid ' + styleVariables.avatarBorderColor
     },
     avatarSmall: {
         width: theme.spacing(22),
         height: theme.spacing(22),
-        border: '0.5rem solid ' + styleVariables.evenSectionColor
+        border: '0.5rem solid ' + styleVariables.avatarBorderColor
     }
 }));
 
@@ -39,10 +39,7 @@ const Profile = ({userInfo, isRu}) => {
                         {isRu ? "Обо мне" : "About me"}
                     </Typography>
                     <Typography variant='body1'>
-                        I am an allround web developer. I am a senior programmer with good knowledge of front-end
-                        techniques. I love structure and order and I also stand for quality. I love spending time on
-                        fixing little details and optimizing web apps. Also I like working in a team, you'll learn
-                        faster and much more. As the saying goes: 'two heads are better than one'.
+                        {userInfo.about}
                     </Typography>
                 </Grid>
                 <Grid container item xs={12} md={4} direction="column" justify="flex-start" alignItems="center">
