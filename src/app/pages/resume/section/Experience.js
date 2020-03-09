@@ -1,22 +1,23 @@
 import React from 'react';
 import SectionTitle from "../../../components/section-title/SectionTitle";
+import {Box} from "@material-ui/core";
+import ExperienceItem from "../../../components/experience/ExperienceItem";
 
 const Experience = ({experienceList, isRu}) => {
 
     let companies = experienceList.map((experience, i) => (
-        <li key={i}>
-            {experience.company}
-        </li>
+        <ExperienceItem experience={experience} key={i}/>
     ));
+
 
     return (
         <>
             <SectionTitle title={isRu ? 'Опыт работы' : 'Experience'}
                           quote={"Protons give an atom its identity, electrons its personality."}
                           author={"Bill Bryson, A short history of nearly everything"}/>
-            <ul>
+            <Box className="resume-section-experience-container">
                 {companies}
-            </ul>
+            </Box>
         </>
     );
 };

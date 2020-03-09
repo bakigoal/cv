@@ -49,7 +49,7 @@
       "company": "Финансовая корпорация \"Открытие\"",
       "job_title": "Java Разработчик",
       "responsibilities": [
-        "Исправление багов, рефакторинг и доработка функционала на бэкенде"
+        "Whoopaa is a startup that began as a social network where users were able to separate their business- and personal social life. As this idea didn't exactly take off the way we expected it to, we changed the idea. We began a job matching platform, where Whoopaa became the place for job seekers to make an interactive CV enriched with certified tests. The place where companies can create job openings and efficiently find the right candidates needed a name as well, and was called HRMatches. I developed an own framework, which I improved in user experience and speed after the big idea change. I also developed the real time match algorithm as well as a lot of other helpful algorithms."
       ],
       "technologies": [
         "Java 8",
