@@ -31,9 +31,24 @@ const Resume = () => {
             }
         },
         typography: {
-            fontSize: 14,
+            fontFamily: [
+                'Open Sans',
+                '-apple-system',
+                'Raleway',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                '"Helvetica Neue"',
+                'Arial',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+            ].join(','),
+            fontSize: 16,
             h2: {
                 color: styleVariables.cyanColor,
+                fontSize: '3rem',
                 fontWeight: 300
             },
             h3: {
@@ -45,12 +60,12 @@ const Resume = () => {
             h5: {
                 color: 'rgb(67,66,66)',
                 fontWeight: 500,
-                fontSize: '1.2rem'
+                fontSize: '1.22rem'
             },
             h6: {
                 color: 'rgb(67,66,66)',
-                fontWeight: 500,
-                fontSize: '1rem'
+                fontWeight: 400,
+                fontSize: '1.1rem'
             },
             subtitle1: {
                 color: styleVariables.typographyColor,

@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import LinkIcon from '@material-ui/icons/Link';
-import {Link} from "@material-ui/core";
+import {Hidden, Link} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import './ExperienceItem.scss';
 
@@ -22,9 +22,11 @@ const ExperienceItem = ({experience}) => {
                 <Typography variant='h6'>
                     {experience.job_title}
                 </Typography>
-                <Typography variant='body1'>
-                    {experience.responsibilities}
-                </Typography>
+                <Hidden smDown implementation="css">
+                    <Typography variant='body1'>
+                        {experience.responsibilities}
+                    </Typography>
+                </Hidden>
                 <Box>
                     <LocationOnIcon color="secondary" fontSize="small"/>
                     <Typography color="secondary" display="inline">{experience.city}</Typography>
