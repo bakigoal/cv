@@ -1,9 +1,13 @@
 @import "../../../shared/style/variables";
 
+.resume-container {
+  background-color: $oddSectionColor;
+}
+
 .resume-section {
   padding-top: 5rem;
+  margin-top: 1px;
   min-height: 100vh;
-  background-color: $oddSectionColor;
 
   @media screen and (min-width: $width-small) {
     padding-top: 7rem;

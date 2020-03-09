@@ -87,7 +87,7 @@ const Resume = () => {
 
         <ThemeProvider theme={theme}>
             <CssBaseline/>
-            <div>
+            <div className="resume-container">
                 <NavBar sections={sections} isRu={isRu()} onLangChange={setLang}/>
                 <section id="profile" className="resume-section">
                     <Container maxWidth="md">
