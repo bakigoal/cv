@@ -15,8 +15,8 @@ const useStyles = makeStyles(theme => ({
         border: '0.5rem solid ' + styleVariables.avatarBorderColor
     },
     avatarSmall: {
-        width: theme.spacing(22),
-        height: theme.spacing(22),
+        width: theme.spacing(24),
+        height: theme.spacing(24),
         border: '0.5rem solid ' + styleVariables.avatarBorderColor
     }
 }));
@@ -46,7 +46,7 @@ const Profile = ({userInfo, isRu}) => {
                     <Hidden smDown implementation="css">
                         <Avatar alt="Ilmir" src={avatarUrl} className={classes.avatarLarge}/>
                     </Hidden>
-                    <Hidden mdUp implementation="css">
+                    <Hidden mdUp implementation="css" className='profile-avatar'>
                         <Avatar alt="Ilmir" src={avatarUrl} className={classes.avatarSmall}/>
                     </Hidden>
                 </Grid>
