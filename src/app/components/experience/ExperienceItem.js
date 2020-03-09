@@ -1,6 +1,10 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import LinkIcon from '@material-ui/icons/Link';
+import {Link} from "@material-ui/core";
+import Box from "@material-ui/core/Box";
 
 const ExperienceItem = ({experience}) => {
     return (
@@ -10,7 +14,7 @@ const ExperienceItem = ({experience}) => {
                     {experience.company}
                 </Typography>
                 <Typography variant='body1'>
-                    {experience.start_date  + " - " + experience.end_date}
+                    {experience.start_date + " - " + experience.end_date}
                 </Typography>
             </Grid>
             <Grid container item xs={12} md={8} direction="column">
@@ -20,6 +24,20 @@ const ExperienceItem = ({experience}) => {
                 <Typography variant='body1'>
                     {experience.responsibilities}
                 </Typography>
+                <Box>
+                    <LocationOnIcon color="secondary" fontSize="small"/>
+                    <Typography color="secondary" display="inline">{experience.city}</Typography>
+                    {experience.site ? (
+                        <>
+                            <Typography color="textSecondary" display="inline"> | </Typography>
+                            <LinkIcon color="secondary" fontSize="small"/>
+                            <Link color="secondary" display="inline"
+                                  href={experience.site}
+                                  target="_blank"
+                                  rel="noopener">{experience.site}</Link>
+                        </>
+                    ) : ''}
+                </Box>
             </Grid>
         </Grid>
     );

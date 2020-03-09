@@ -28,6 +28,7 @@
       "site": "http://www.xrm.ru/",
       "company": "Экстрим ПРО",
       "job_title": "Разработчик ПО",
+      "city": "Ekaterinburg",
       "responsibilities": [
         "Поддержка и рефакторинг существующего java и javascript кода"
       ],
@@ -48,8 +49,9 @@
       "site": "http://www.open.ru/",
       "company": "Финансовая корпорация \"Открытие\"",
       "job_title": "Java Разработчик",
+      "city": "Moscow",
       "responsibilities": [
-        "Whoopaa is a startup that began as a social network where users were able to separate their business- and personal social life. As this idea didn't exactly take off the way we expected it to, we changed the idea. We began a job matching platform, where Whoopaa became the place for job seekers to make an interactive CV enriched with certified tests. The place where companies can create job openings and efficiently find the right candidates needed a name as well, and was called HRMatches. I developed an own framework, which I improved in user experience and speed after the big idea change. I also developed the real time match algorithm as well as a lot of other helpful algorithms."
+        "Исправление багов, рефакторинг и доработка функционала на бэкенде"
       ],
       "technologies": [
         "Java 8",
@@ -68,6 +70,7 @@
       "site": "",
       "company": "Фриланс",
       "job_title": "Java Разработчик",
+      "city": "Ufa",
       "responsibilities": [
         "Разработка настольных, веб и мобильных приложений для студентов"
       ],
@@ -88,6 +91,7 @@
       "site": "http://www.xrm.ru/",
       "company": "Экстрим ПРО",
       "job_title": "Разработчик ПО",
+      "city": "Ekaterinburg",
       "responsibilities": [
         "Разработка отчетов для системы <a href='https://dom.gosuslugi.ru' target='_blank'>ГИС ЖКХ</a>",
         "Поддержка и рефакторинг существующего java и javascript кода"
@@ -109,6 +113,7 @@
       "site": "https://www.voskhod.ru/",
       "company": "ФГБУ НИИ \"Восход\"",
       "job_title": "Разработчик ПО",
+      "city": "Moscow",
       "responsibilities": [
         "Разработка кода по ТЗ",
         "Поддержка и рефакторинг существующего java кода"
@@ -133,6 +138,7 @@
       "site": "http://iis-soft.ru/en/index.html",
       "company": "Комплексные Информационные Решения",
       "job_title": "Java Разработчик",
+      "city": "Ufa",
       "responsibilities": [
         "Создание и доработка элементов пользовательского интерфейса",
         "Разработка логики наполнения данными и их обработки"

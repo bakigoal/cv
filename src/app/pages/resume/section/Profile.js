@@ -44,10 +44,10 @@ const Profile = ({userInfo, isRu}) => {
                 </Grid>
                 <Grid container item xs={12} md={4} direction="column" justify="flex-start" alignItems="center">
                     <Hidden smDown implementation="css">
-                        <Avatar alt="Remy Sharp" src={avatarUrl} className={classes.avatarLarge}/>
+                        <Avatar alt="Ilmir" src={avatarUrl} className={classes.avatarLarge}/>
                     </Hidden>
                     <Hidden mdUp implementation="css">
-                        <Avatar alt="Remy Sharp" src={avatarUrl} className={classes.avatarSmall}/>
+                        <Avatar alt="Ilmir" src={avatarUrl} className={classes.avatarSmall}/>
                     </Hidden>
                 </Grid>
                 <Grid container item xs={12} md={4} direction="column">
