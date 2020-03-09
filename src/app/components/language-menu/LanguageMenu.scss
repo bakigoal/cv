@@ -2,6 +2,11 @@
   justify-content: flex-end !important;
 }
 
+.MuiListItem-button {
+  color: #fafafa !important;
+  font-weight: bold !important;
+}
+
 .MuiListItem-button:hover:not(.Mui-selected), .Mui-focusVisible:not(.Mui-selected) {
   background-color: #37474f !important;
 }

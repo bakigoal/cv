@@ -2,8 +2,7 @@
 
 .resume-section-title {
   text-align: center;
-  h3 {
-    color: $cyanColor;
+  h2 {
     margin-bottom: 1.25rem;
   }
   hr {
@@ -11,9 +10,5 @@
     border: 0 #727878;
     border-top: 1px solid;
     opacity: 0.2;
-  }
-  h6{
-    color: #727878;
-    font-weight: lighter;
   }
 }

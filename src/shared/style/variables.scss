@@ -5,6 +5,7 @@ $secondaryColor: #e31b6d;
 $cyanColor: #0097a7;
 $oddSectionColor: $lightColor;
 $evenSectionColor: #cfd8dc;
+$typographyColor: #727878;
 
 $width-extra-small: 320px;
 $width-small: 768px;
@@ -18,4 +19,5 @@ $width-large: 1200px;
   oddSectionColor: $oddSectionColor;
   evenSectionColor: $evenSectionColor;
   lightColor: $lightColor;
+  typographyColor: $typographyColor;
 }

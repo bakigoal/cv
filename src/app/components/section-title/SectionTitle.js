@@ -1,24 +1,25 @@
 import Typography from "@material-ui/core/Typography";
 import React from "react";
 import './SectionTitle.scss';
+import Divider from "@material-ui/core/Divider";
 
 const SectionTitle = ({title, subtitle, quote, author}) => {
 
     return (
         <div className="resume-section-title">
-            <Typography variant='h3'>
+            <Typography variant='h2'>
                 {title}
             </Typography>
-            <Typography variant='h6' hidden={!subtitle}>
+            <Typography variant='subtitle1' hidden={!subtitle}>
                 {subtitle}
             </Typography>
-            <Typography variant='h6' hidden={!quote}>
+            <Typography variant='subtitle1' hidden={!quote}>
                 “{quote}”
             </Typography>
-            <Typography variant='h6' hidden={!author}>
+            <Typography variant='subtitle1' hidden={!author}>
                 - {author}
             </Typography>
-            <hr/>
+            <Divider/>
         </div>
     );
 };

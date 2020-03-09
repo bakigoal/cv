@@ -1,12 +1,13 @@
 import React from 'react';
 import Typography from "@material-ui/core/Typography";
+import SectionTitle from "../../../components/section-title/SectionTitle";
 
 const Education = ({isRu}) => {
     return (
         <>
-            <Typography variant='h3' className="resume-section-title">
-                {isRu ? 'Образование' : 'Education'}
-            </Typography>
+            <SectionTitle title={isRu ? 'Образование' : 'Education'}
+                          quote={"Protons give an atom its identity, electrons its personality."}
+                          author={"Bill Bryson, A short history of nearly everything"}/>
             <h2 className="mb-4">Университет</h2>
             <div className="resume-item d-flex flex-column flex-md-row mb-5">
                 <div className="resume-content mr-auto">

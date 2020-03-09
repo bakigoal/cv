@@ -31,10 +31,31 @@ const Resume = () => {
             }
         },
         typography: {
-            fontSize: 16,
-            h3: {
+            fontSize: 14,
+            h2: {
                 color: styleVariables.cyanColor,
                 fontWeight: 300
+            },
+            h3: {
+                color: styleVariables.cyanColor,
+                fontWeight: 300,
+                fontSize: '1.75rem',
+                marginBottom: '1.25rem'
+            },
+            h5: {
+                fontSize: '1.2rem',
+            },
+            h6: {
+                fontSize: '1rem',
+            },
+            subtitle1: {
+                color: styleVariables.typographyColor,
+                fontSize: '1.25rem',
+                fontWeight: 300,
+            },
+            body1: {
+                color: styleVariables.typographyColor,
+                fontWeight: 300,
             }
         }
     });
