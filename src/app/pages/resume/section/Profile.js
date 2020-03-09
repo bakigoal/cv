@@ -12,11 +12,12 @@ const useStyles = makeStyles(theme => ({
     avatarLarge: {
         width: theme.spacing(32),
         height: theme.spacing(32),
-        border: '0.5rem solid '+styleVariables.evenSectionColor
+        border: '0.5rem solid ' + styleVariables.evenSectionColor
     },
     avatarSmall: {
         width: theme.spacing(22),
         height: theme.spacing(22),
+        border: '0.5rem solid ' + styleVariables.evenSectionColor
     }
 }));
 
@@ -31,7 +32,8 @@ const Profile = ({userInfo, isRu}) => {
             <SectionTitle title={isRu ? 'Профиль' : 'Profile'}
                           subtitle={userInfo.title}/>
 
-            <Grid container direction="row" justify="center" alignItems="flex-start"  className='resume-section-profile-container'>
+            <Grid container direction="row" justify="center" alignItems="flex-start"
+                  className='resume-section-profile-container'>
                 <Grid container item xs={12} md={4} direction="column">
                     <Typography variant='h3'>
                         {isRu ? "Обо мне" : "About me"}

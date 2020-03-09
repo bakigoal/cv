@@ -31,8 +31,8 @@
 
 .resume-section-profile-container {
   div {
+    align-items: center;
     @media screen and (max-width: $width-medium) {
-      align-items: center;
       margin-bottom: 1rem;
       p {
         text-align: center;
