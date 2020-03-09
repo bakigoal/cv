@@ -17,8 +17,11 @@
 
 .resume-section-last {
   background-color: $darkColor;
-  min-height: 93vh;
-  padding-top: 2rem;
+  padding-top: 0;
+
+  .resume-section-last-container {
+    padding-top: 2rem;
+  }
 
   h2 {
     color: $lightColor;
