@@ -22,7 +22,7 @@ const ExperienceItem = ({experience}) => {
                 <Typography variant='h6'>
                     {experience.job_title}
                 </Typography>
-                <Hidden smDown implementation="css">
+                <Hidden xsDown implementation="css">
                     <Typography variant='body1'>
                         {experience.responsibilities}
                     </Typography>
