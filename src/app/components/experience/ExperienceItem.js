@@ -5,10 +5,11 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import LinkIcon from '@material-ui/icons/Link';
 import {Link} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import './ExperienceItem.scss';
 
 const ExperienceItem = ({experience}) => {
     return (
-        <Grid container direction="row" justify="center" alignItems="flex-start">
+        <Grid container direction="row" justify="center" alignItems="flex-start" className='experience-item'>
             <Grid container item xs={12} md={4} direction="column">
                 <Typography variant='h5'>
                     {experience.company}

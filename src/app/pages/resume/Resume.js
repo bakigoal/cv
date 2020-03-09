@@ -43,10 +43,14 @@ const Resume = () => {
                 marginBottom: '1.25rem'
             },
             h5: {
-                fontSize: '1.2rem',
+                color: 'rgb(67,66,66)',
+                fontWeight: 500,
+                fontSize: '1.2rem'
             },
             h6: {
-                fontSize: '1rem',
+                color: 'rgb(67,66,66)',
+                fontWeight: 500,
+                fontSize: '1rem'
             },
             subtitle1: {
                 color: styleVariables.typographyColor,
