@@ -28,3 +28,15 @@
     border-top: 1px solid #eee;
   }
 }
+
+.resume-section-profile-container {
+  div {
+    @media screen and (max-width: $width-medium) {
+      align-items: center;
+      margin-bottom: 1rem;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
