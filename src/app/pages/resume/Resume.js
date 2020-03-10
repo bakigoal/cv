@@ -45,27 +45,26 @@ const Resume = () => {
                 '"Segoe UI Emoji"',
                 '"Segoe UI Symbol"',
             ].join(','),
-            fontSize: 16,
             h2: {
                 color: styleVariables.cyanColor,
-                fontSize: '3rem',
-                fontWeight: 300
+                fontWeight: 400,
+                fontSize: '3.2rem'
             },
             h3: {
                 color: styleVariables.cyanColor,
-                fontWeight: 300,
+                fontWeight: 400,
                 fontSize: '1.75rem',
                 marginBottom: '1.25rem'
             },
             h5: {
                 color: 'rgb(67,66,66)',
-                fontWeight: 500,
-                fontSize: '1.22rem'
+                fontWeight: 600,
+                fontSize: '1.2rem'
             },
             h6: {
                 color: 'rgb(67,66,66)',
-                fontWeight: 400,
-                fontSize: '1.1rem'
+                fontWeight: 600,
+                fontSize: '1rem'
             },
             subtitle1: {
                 color: styleVariables.typographyColor,

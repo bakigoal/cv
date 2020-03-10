@@ -2,7 +2,7 @@
   "user": {
     "firstName": "Ilmir",
     "lastName": "Bakirov",
-    "title": "I'm a Web Developer",
+    "title": "I'm a full-stack Web Developer",
     "addressText": "Ufa, Russia",
     "phone": "+7 (909) 347-22-77",
     "email": "ilmirbakirov@gmail.com",
@@ -26,11 +26,11 @@
   "experience": [
     {
       "site": "http://www.xrm.ru/",
-      "company": "Экстрим ПРО",
-      "job_title": "Разработчик ПО",
+      "company": "Extreme PRO",
+      "job_title": "Software Developer",
       "city": "Ekaterinburg",
       "responsibilities": [
-        "Поддержка и рефакторинг существующего java и javascript кода"
+        "Maintained and refactored existing java and javascript code"
       ],
       "technologies": [
         "Java 8",
@@ -42,16 +42,16 @@
         "Gradle",
         "JIRA"
       ],
-      "start_date": "Декабрь 2018",
-      "end_date": "настоящее время"
+      "start_date": "Dec 2018",
+      "end_date": "current"
     },
     {
       "site": "http://www.open.ru/",
-      "company": "Финансовая корпорация \"Открытие\"",
-      "job_title": "Java Разработчик",
+      "company": "Otkritie Bank",
+      "job_title": "Java Developer",
       "city": "Moscow",
       "responsibilities": [
-        "Исправление багов, рефакторинг и доработка функционала на бэкенде"
+        "Bug fixing, refactoring and adding new features on backend"
       ],
       "technologies": [
         "Java 8",
@@ -63,16 +63,16 @@
         "Jenkins",
         "JIRA"
       ],
-      "start_date": "Сентябрь 2018",
-      "end_date": "Ноябрь 2018"
+      "start_date": "Sep 2018",
+      "end_date": "Nov 2018"
     },
     {
       "site": "",
-      "company": "Фриланс",
-      "job_title": "Java Разработчик",
+      "company": "Freelance",
+      "job_title": "Java Developer",
       "city": "Ufa",
       "responsibilities": [
-        "Разработка настольных, веб и мобильных приложений для студентов"
+        "Developed Desktop, Web and Mobile applications for students"
       ],
       "technologies": [
         "Java 8",
@@ -84,17 +84,17 @@
         "Hibernate",
         "Android SDK"
       ],
-      "start_date": "Март 2017",
-      "end_date": "Май 2018"
+      "start_date": "Feb 2017",
+      "end_date": "Aug 2018"
     },
     {
       "site": "http://www.xrm.ru/",
-      "company": "Экстрим ПРО",
-      "job_title": "Разработчик ПО",
+      "company": "Extreme PRO",
+      "job_title": "Software Developer",
       "city": "Ekaterinburg",
       "responsibilities": [
-        "Разработка отчетов для системы <a href='https://dom.gosuslugi.ru' target='_blank'>ГИС ЖКХ</a>",
-        "Поддержка и рефакторинг существующего java и javascript кода"
+        "Developed a new reports for the system GIS ZHKH",
+        "Maintained and refactored existing java and javascript code"
       ],
       "technologies": [
         "Java 8",
@@ -106,17 +106,17 @@
         "Gradle",
         "JIRA"
       ],
-      "start_date": "Сентябрь 2017",
-      "end_date": "Январь 2018"
+      "start_date": "Sep 2017",
+      "end_date": "Jan 2018"
     },
     {
       "site": "https://www.voskhod.ru/",
-      "company": "ФГБУ НИИ \"Восход\"",
-      "job_title": "Разработчик ПО",
+      "company": "FGBU NII 'Voskhod'",
+      "job_title": "Software Developer",
       "city": "Moscow",
       "responsibilities": [
-        "Разработка кода по ТЗ",
-        "Поддержка и рефакторинг существующего java кода"
+        "Developed the Code as per the requirements",
+        "Maintained and refactored existing java code"
       ],
       "technologies": [
         "Java 8",
@@ -131,17 +131,17 @@
         "JIRA",
         "Confluence"
       ],
-      "start_date": "Октябрь 2016",
-      "end_date": "Февраль 2017"
+      "start_date": "Oct 2016",
+      "end_date": "Feb 2017"
     },
     {
       "site": "http://iis-soft.ru/en/index.html",
-      "company": "Комплексные Информационные Решения",
-      "job_title": "Java Разработчик",
+      "company": "Integrated Information Solutions",
+      "job_title": "Java Developer",
       "city": "Ufa",
       "responsibilities": [
-        "Создание и доработка элементов пользовательского интерфейса",
-        "Разработка логики наполнения данными и их обработки"
+        "Developed and maintained an online Document Management System",
+        "Developed basic CRUD operations"
       ],
       "technologies": [
         "Java 8",
@@ -156,8 +156,48 @@
         "JIRA",
         "Redmine"
       ],
-      "start_date": "Июнь 2015",
-      "end_date": "Июль 2016"
+      "start_date": "Jun 2015",
+      "end_date": "Jul 2016"
     }
-  ]
+  ],
+  "education" : {
+    "universities": [
+      {
+        "name": "Bashkir State University",
+        "dates" : "Sep 2009 - May 2013",
+        "degree": "Bachelor of Science",
+        "faculty": "Mathematics and Information Technologies"
+      }
+    ],
+    "courses" : [
+      {
+        "name": "Web and Enterprise Applications Development in Java",
+        "dates": "Oct 2014 - May 2015",
+        "place": "Datateh",
+        "url": "http://datateh.ru/"
+      }
+    ],
+    "online-courses": [
+      {
+        "name": "PROGRAMMING IN PYTHON",
+        "date": "Jun 2018",
+        "url": "https://stepik.org/cert/109641"
+      },
+      {
+        "name": "LINUX INTRO",
+        "date": "May 2018",
+        "url": "https://stepik.org/cert/108513"
+      },
+      {
+        "name": "HTML, CSS, AND JAVASCRIPT FOR WEB DEVELOPERS",
+        "date": "Dec 2016",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/RYNEZA4XKXSC"
+      },
+      {
+        "name": "ADVANCED PROGRAMMING IN JAVA",
+        "date": "Mar 2016",
+        "url": "https://www.intuit.ru/verifydiplomas/100944634"
+      }
+    ]
+  }
 }

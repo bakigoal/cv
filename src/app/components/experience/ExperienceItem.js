@@ -18,15 +18,16 @@ const ExperienceItem = ({experience}) => {
                     {experience.start_date + " - " + experience.end_date}
                 </Typography>
             </Grid>
-            <Grid container item xs={12} md={8} direction="column">
+            <Hidden mdDown>
+                <Grid container item md={1}/>
+            </Hidden>
+            <Grid container item xs={12} md={7} direction="column">
                 <Typography variant='h6'>
                     {experience.job_title}
                 </Typography>
-                <Hidden xsDown implementation="css">
-                    <Typography variant='body1'>
-                        {experience.responsibilities}
-                    </Typography>
-                </Hidden>
+                <Typography variant='body1'>
+                    {experience.responsibilities}
+                </Typography>
                 <Box>
                     <LocationOnIcon color="secondary" fontSize="small"/>
                     <Typography color="secondary" display="inline">{experience.city}</Typography>
