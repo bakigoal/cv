@@ -13,6 +13,7 @@ import {createMuiTheme, responsiveFontSizes, ThemeProvider} from "@material-ui/c
 import CssBaseline from "@material-ui/core/CssBaseline";
 import styleVariables from "../../../shared/style/variables.scss";
 import {Container} from "@material-ui/core";
+import {blueGrey} from "@material-ui/core/colors";
 
 const LANGUAGES = ['RU', 'EN'];
 
@@ -46,12 +47,12 @@ const Resume = () => {
                 '"Segoe UI Symbol"',
             ].join(','),
             h2: {
-                color: styleVariables.cyanColor,
+                color: blueGrey[700],
                 fontWeight: 400,
                 fontSize: '3.2rem'
             },
             h3: {
-                color: styleVariables.cyanColor,
+                color: blueGrey[700],
                 fontWeight: 400,
                 fontSize: '1.75rem',
                 marginBottom: '1.25rem'
