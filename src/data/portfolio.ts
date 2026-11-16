@@ -15,7 +15,7 @@ export const profile = {
     "Java Backend Developer with 9+ years of experience in Spring Boot, microservices, Apache Kafka, and enterprise banking systems.",
   intro: "Enterprise banking experience across VTB and Gazprombank.",
   about: [
-    "I design REST APIs, implement asynchronous integrations, and maintain existing backend services.",
+    "My work includes a custom workflow engine, a notification service, REST APIs, and asynchronous integrations.",
     "Alongside feature development, I write unit tests, review code, and refactor existing services.",
   ],
 };
@@ -32,8 +32,8 @@ export const experience: Experience[] = [
     role: "Java Developer",
     project: "VTB — Banking Onboarding",
     contributions: [
-      "Developed and maintained banking onboarding microservices.",
-      "Designed REST APIs and Kafka-based integrations.",
+      "Designed and developed a custom workflow engine for banking onboarding processes.",
+      "Developed a notification service with REST and Kafka intake and asynchronous message publishing.",
       "Modernized existing services and investigated performance bottlenecks.",
       "Improved transaction handling in external service integrations.",
     ],
@@ -179,6 +179,22 @@ export const expertise = [
   },
 ];
 export const selectedWork = [
+  {
+    title: "Custom workflow engine",
+    stack: "Java / Spring Boot / PostgreSQL",
+    details: [
+      "Designed and implemented a workflow engine for customer onboarding and client data updates.",
+      "Added persistent process state and execution history, with retries, timeouts, and the ability to resume after failures.",
+    ],
+  },
+  {
+    title: "Asynchronous notification service",
+    stack: "Java / Spring Boot / PostgreSQL / Kafka",
+    details: [
+      "Built a service accepting notification requests via REST and Kafka. Requests were persisted with pending status; the REST API returned HTTP 202 Accepted.",
+      "A background worker generated message bodies and published them to channel-specific Kafka topics with at-least-once delivery. The shared-services team handled downstream integrations with external providers.",
+    ],
+  },
   {
     title: "Modernizing banking microservices",
     stack: "Java 11 → 21 / Spring Boot 2 → 3 / Gatling",
