@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ilmir Bakirov — portfolio
 
-## Available Scripts
+A responsive portfolio built with Next.js App Router, TypeScript, Tailwind CSS, Motion, Lucide, and locally bundled Geist fonts.
 
-In the project directory, you can run:
+## Local development
 
-### `yarn start`
+```sh
+npm ci
+npm run dev
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open http://127.0.0.1:3000.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## GitHub Pages
 
-### `yarn test`
+The workflow in `.github/workflows/deploy.yml` publishes the site on pushes to `master`. It can also be started manually from the Actions tab. It installs locked dependencies, checks TypeScript, builds the static site, and deploys `out/` through the official GitHub Pages actions. No custom secrets are required.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Repository Settings → Pages → Build and deployment → Source must be **GitHub Actions**.
 
-### `yarn build`
+The workflow obtains the site's URL and path from GitHub Pages, so asset URLs and metadata match the deployment. The default project URL is https://bakigoal.github.io/cv/.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To reproduce the Pages build locally:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```sh
+BASE_PATH=/cv SITE_URL=https://bakigoal.github.io/cv npm run build
+npm run typecheck
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The generated `out/` directory can also be deployed to another static host. Omit `BASE_PATH` for hosting at the domain root, and set `SITE_URL` to the production URL.
 
-### `yarn eject`
+## Source
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `src/data/portfolio.ts`: typed professional content, structured for later localization.
+- `src/components/sections.tsx`: server-rendered portfolio sections.
+- `src/components/interactions.tsx`: mobile navigation, expandable career history, and clipboard interaction.
+- `src/app/globals.css`: responsive visual system and reduced-motion styles.
+- `src/app/layout.tsx`: metadata, canonical URL, local fonts, document shell.
+- `public/opengraph-image.png`: Open Graph image, served as a PNG on static hosting.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Navigation closes on selection and Escape. Email uses a functional mailto link and an accessible copy button. The earlier-experience expansion and anchor navigation respect reduced-motion preferences.
