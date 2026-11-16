@@ -13,12 +13,10 @@ export const profile = {
   location: "Ufa, Russia",
   description:
     "Java Backend Developer with 9+ years of experience in Spring Boot, microservices, Apache Kafka, and enterprise banking systems.",
-  intro:
-    "Java Backend Developer specializing in microservices, distributed systems, and enterprise banking platforms. Experienced with Java, Spring Boot, Apache Kafka, and backend performance optimization.",
+  intro: "Enterprise banking experience across VTB and Gazprombank.",
   about: [
-    "I'm a Java Backend Developer with over 9 years of commercial experience developing enterprise software, primarily in the banking sector.",
-    "My main focus is building and maintaining microservice-based applications, designing REST APIs, implementing asynchronous integrations, and improving system reliability and performance.",
-    "I've worked on backend systems for VTB and Gazprombank, including service modernization, migration to Java 21 and Spring Boot 3, and reactive backend development with Kotlin and Spring WebFlux.",
+    "I design REST APIs, implement asynchronous integrations, and maintain existing backend services.",
+    "Alongside feature development, I write unit tests, review code, and refactor existing services.",
   ],
 };
 export const navigation = [
@@ -34,12 +32,10 @@ export const experience: Experience[] = [
     role: "Java Developer",
     project: "VTB — Banking Onboarding",
     contributions: [
-      "Developed and maintained Java 21 / Spring Boot 3 microservices.",
-      "Designed REST APIs and asynchronous integrations using Apache Kafka.",
-      "Migrated microservices from Java 11 / Spring Boot 2 to Java 21 / Spring Boot 3.",
-      "Performed load testing with Gatling and investigated performance bottlenecks.",
-      "Improved transaction handling around external REST integrations.",
-      "Wrote unit tests, performed code reviews, and refactored existing services.",
+      "Developed and maintained banking onboarding microservices.",
+      "Designed REST APIs and Kafka-based integrations.",
+      "Modernized existing services and investigated performance bottlenecks.",
+      "Improved transaction handling in external service integrations.",
     ],
     stack: [
       "Java 21",
@@ -59,9 +55,8 @@ export const experience: Experience[] = [
     role: "Java Developer",
     project: "VTB — Banking Onboarding",
     contributions: [
-      "Developed and maintained microservices with Java 11 and Spring Boot 2.",
-      "Implemented REST APIs and Kafka-based integrations.",
-      "Performed unit testing, code reviews, and refactoring.",
+      "Developed banking onboarding microservices.",
+      "Implemented REST endpoints and asynchronous service integrations.",
     ],
     stack: [
       "Java 11",
@@ -79,9 +74,8 @@ export const experience: Experience[] = [
     role: "Java Developer",
     project: "Gazprombank — Omnichannel Internet Banking",
     contributions: [
-      "Developed reactive backend services using Kotlin and Spring WebFlux.",
-      "Implemented reactive PostgreSQL integration using R2DBC.",
-      "Optimized and refactored existing services.",
+      "Developed reactive services for omnichannel internet banking.",
+      "Maintained and optimized the existing backend.",
     ],
     stack: [
       "Kotlin",
@@ -100,11 +94,9 @@ export const experience: Experience[] = [
     project:
       "Enterprise integrations, certificate management, and government information systems",
     contributions: [
-      "Developed Spring Boot microservices.",
-      "Implemented JWT and Keycloak-based authentication.",
-      "Built Kafka integrations and background processing.",
-      "Developed certificate management integrations using CryptoPro.",
-      "Worked on performance optimization and maintenance.",
+      "Built and maintained enterprise microservices.",
+      "Implemented authentication and event-driven background processing.",
+      "Integrated certificate management with external systems.",
     ],
     stack: [
       "Java 8/11",
@@ -188,40 +180,26 @@ export const expertise = [
 ];
 export const selectedWork = [
   {
-    title: "Banking Onboarding Platform",
-    stack: "Java 21 / Spring Boot 3 / Kafka",
-    description:
-      "Enterprise microservices supporting banking onboarding processes.",
-    focus: [
-      "Backend development",
-      "REST APIs",
-      "Asynchronous integrations",
-      "Technology migration",
-      "Performance optimization",
+    title: "Modernizing banking microservices",
+    stack: "Java 11 → 21 / Spring Boot 2 → 3 / Gatling",
+    details: [
+      "Migrated VTB banking onboarding services to Java 21 and Spring Boot 3.",
+      "Used Gatling for load testing and bottleneck investigation, and improved transaction handling around external REST calls.",
     ],
   },
   {
-    title: "Reactive Banking Services",
+    title: "Reactive database access",
     stack: "Kotlin / Spring WebFlux / R2DBC",
-    description:
-      "Reactive backend services for an omnichannel internet banking platform.",
-    focus: [
-      "Reactive programming",
-      "Non-blocking database access",
-      "Service maintenance",
-      "Refactoring",
+    details: [
+      "Implemented reactive PostgreSQL access through R2DBC in Gazprombank's omnichannel banking backend.",
     ],
   },
   {
-    title: "Enterprise Integration Systems",
-    stack: "Java / Spring Boot / PostgreSQL / Kafka",
-    description:
-      "Backend systems integrating enterprise applications with external services.",
-    focus: [
-      "Microservices",
-      "Authentication and authorization",
-      "Event-driven integrations",
-      "Background processing",
+    title: "Enterprise authentication & integrations",
+    stack: "Spring Boot / Kafka / Keycloak / CryptoPro",
+    details: [
+      "Implemented JWT and Keycloak-based authentication, Kafka integrations, and background processing in enterprise systems.",
+      "Integrated certificate management using CryptoPro.",
     ],
   },
 ];

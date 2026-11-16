@@ -5,7 +5,7 @@
 }
 :root {
   --ink: #171717;
-  --muted: #737373;
+  --muted: #666666;
   --line: #e5e5e5;
   --soft: #fafaf9;
 }
@@ -72,7 +72,7 @@ ul {
   font-family: var(--font-geist-mono), monospace;
 }
 .eyebrow {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ ul {
   display: none;
 }
 .hero {
-  padding-top: 109px;
+  padding-top: 96px;
 }
 .hero-eyebrow {
   margin-bottom: 29px;
@@ -213,7 +213,7 @@ h1 span {
   margin-top: 15px;
 }
 .hero-meta .mono {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 28px;
   color: #525252;
 }
@@ -228,10 +228,10 @@ h1 span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 56px;
   padding-block: 19px 24px;
   border-bottom: 1px solid var(--line);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.015em;
   color: var(--muted);
 }
@@ -239,7 +239,7 @@ h1 span {
   padding: 6px;
 }
 .section {
-  padding-block: 108px;
+  padding-block: 96px;
 }
 .section-heading {
   margin-bottom: 50px;
@@ -280,7 +280,7 @@ h1 span {
   gap: 64px;
 }
 .date {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   letter-spacing: -0.02em;
 }
@@ -292,7 +292,7 @@ h1 span {
 }
 .latest-label {
   display: inline-block;
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--muted);
@@ -304,12 +304,12 @@ h1 span {
   letter-spacing: -0.02em;
 }
 .project {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
   margin-top: 5px;
 }
 .contributions {
-  font-size: 14px;
+  font-size: 16px;
   color: #525252;
   margin-top: 23px;
   line-height: 1.8;
@@ -324,11 +324,11 @@ h1 span {
   position: absolute;
   left: 0;
   color: #a3a3a3;
-  font-size: 10px;
+  font-size: 12px;
   top: 3px;
 }
 .stack {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.9;
   margin-top: 24px;
@@ -352,7 +352,7 @@ h1 span {
   padding-block: 28px;
 }
 .earlier-description {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
   margin-top: 12px;
 }
@@ -369,18 +369,18 @@ h1 span {
   padding-top: 20px;
 }
 .skill-number {
-  font-size: 10px;
+  font-size: 12px;
   color: #737373;
   margin-bottom: 22px;
 }
 .expertise-group h3 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: -0.015em;
   margin-bottom: 22px;
 }
 .expertise-group ul {
-  font-size: 14px;
+  font-size: 15px;
   color: #525252;
   line-height: 2.15;
 }
@@ -392,7 +392,7 @@ h1 span {
   padding-block: 34px 40px;
 }
 .work-number {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   padding-top: 6px;
 }
@@ -404,27 +404,18 @@ h1 span {
   max-width: 310px;
 }
 .work-stack {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.9;
   margin-top: 16px;
 }
 .work-description {
-  font-size: 14px;
+  font-size: 16px;
   color: #525252;
   line-height: 1.8;
 }
-.work-description ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 14px;
-  font-size: 11px;
-  color: var(--muted);
-  margin-top: 21px;
-}
-.work-description li {
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--line);
+.work-description p + p {
+  margin-top: 14px;
 }
 .background {
   border-top: 1px solid var(--line);
@@ -437,7 +428,7 @@ h1 span {
   margin-bottom: 0;
 }
 .background-label {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   margin-bottom: 18px;
 }
@@ -514,7 +505,7 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   padding: 3px 0;
 }
@@ -522,11 +513,11 @@ h1 span {
   color: var(--ink);
 }
 .copy-status {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 .contact-meta {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   margin-top: 54px;
 }
@@ -535,7 +526,7 @@ h1 span {
   padding-block: 27px;
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .footer > div {
@@ -574,7 +565,7 @@ h1 span {
     grid-template-columns: 1.8fr 1fr;
   }
   .hero-meta {
-    font-size: 11px;
+    font-size: 12px;
   }
   .about {
     gap: 48px;
@@ -583,7 +574,7 @@ h1 span {
     gap: 20px;
   }
   .expertise-group h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .experience-row {
     gap: 40px;
@@ -636,10 +627,10 @@ h1 span {
     font-size: 16px;
   }
   .hero {
-    padding-top: 66px;
+    padding-top: 48px;
   }
   .hero-eyebrow {
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0.04em;
     margin-bottom: 27px;
   }
@@ -647,13 +638,13 @@ h1 span {
     margin-inline: 3px;
   }
   h1 {
-    font-size: 56px;
+    font-size: clamp(44px, 13vw, 56px);
     letter-spacing: -0.06em;
   }
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
-    margin-top: 27px;
+    gap: 28px;
+    margin-top: 24px;
   }
   .hero-statement {
     font-size: 27px;
@@ -674,7 +665,7 @@ h1 span {
     padding: 11px 14px;
   }
   .hero-meta {
-    font-size: 11px;
+    font-size: 12px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px 20px;
@@ -685,29 +676,29 @@ h1 span {
   .hero-meta .mono {
     width: 100%;
     margin-top: 3px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .hero-bottom {
-    margin-top: 38px;
-    font-size: 9px;
+    margin-top: 28px;
+    font-size: 12px;
     padding-block: 13px;
   }
   .section {
-    padding-block: 68px;
+    padding-block: 56px;
   }
   .section-heading {
-    margin-bottom: 34px;
+    margin-bottom: 28px;
   }
   .section-heading h2 {
     font-size: 34px;
     margin-top: 16px;
   }
   .eyebrow {
-    font-size: 10px;
+    font-size: 12px;
   }
   .about {
     grid-template-columns: 1fr;
-    gap: 29px;
+    gap: 24px;
   }
   .about h2 {
     max-width: 270px;
@@ -717,12 +708,12 @@ h1 span {
     line-height: 1.8;
   }
   .about-copy p + p {
-    margin-top: 19px;
+    margin-top: 16px;
   }
   .experience-row {
     grid-template-columns: 1fr;
-    gap: 23px;
-    padding-block: 29px 32px;
+    gap: 20px;
+    padding-block: 26px 28px;
   }
   .experience-company h3 {
     font-size: 22px;
@@ -732,20 +723,20 @@ h1 span {
     margin-top: 8px;
   }
   .date {
-    font-size: 10px;
+    font-size: 12px;
   }
   .experience-detail h4 {
     font-size: 17px;
   }
   .project {
-    font-size: 13px;
+    font-size: 15px;
   }
   .contributions {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 19px;
   }
   .stack {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 20px;
   }
   .expertise-grid {
@@ -753,7 +744,7 @@ h1 span {
     gap: 36px 24px;
   }
   .expertise-group h3 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 15px;
   }
@@ -761,7 +752,7 @@ h1 span {
     margin-bottom: 15px;
   }
   .expertise-group ul {
-    font-size: 13px;
+    font-size: 15px;
   }
   .work-row {
     grid-template-columns: 24px 1fr;
@@ -773,19 +764,16 @@ h1 span {
   }
   .work-description {
     grid-column: 2;
-    font-size: 14px;
+    font-size: 16px;
   }
   .work-stack {
     margin-top: 12px;
-    font-size: 10px;
-  }
-  .work-description ul {
-    margin-top: 17px;
+    font-size: 12px;
   }
   .background {
     grid-template-columns: 1fr 1fr;
     gap: 30px 20px;
-    padding-block: 45px 60px;
+    padding-block: 40px 48px;
   }
   .background .section-heading {
     grid-column: 1/-1;
@@ -801,7 +789,7 @@ h1 span {
     gap: 15px;
   }
   .contact-section .section {
-    padding-block: 67px;
+    padding-block: 56px;
   }
   .contact-section h2 {
     font-size: 43px;
@@ -812,7 +800,7 @@ h1 span {
     margin-top: 23px;
   }
   .email-link {
-    font-size: 23px;
+    font-size: clamp(18px, 5.8vw, 23px);
     gap: 12px;
     margin-top: 29px;
   }
@@ -820,14 +808,14 @@ h1 span {
     width: 21px;
   }
   .contact-meta {
-    font-size: 9px;
-    margin-top: 37px;
+    font-size: 12px;
+    margin-top: 28px;
   }
   .footer {
     padding-block: 24px;
     gap: 20px;
     align-items: flex-start;
-    font-size: 9px;
+    font-size: 12px;
   }
   .footer > div {
     gap: 12px;
@@ -835,7 +823,7 @@ h1 span {
     align-items: flex-end;
   }
   .copy-status {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

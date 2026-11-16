@@ -77,7 +77,7 @@ export function About() {
       <SectionHeading
         number="01"
         label="About"
-        title="Engineering reliable systems."
+        title="From implementation to maintenance."
       />
       <div className="about-copy">
         {profile.about.map((p) => (
@@ -167,7 +167,7 @@ export function SelectedWork() {
       <SectionHeading
         number="04"
         label="Selected work"
-        title="Systems I've helped build."
+        title="Engineering in practice."
       />
       <div className="work-list">
         {selectedWork.map((work, index) => (
@@ -178,12 +178,9 @@ export function SelectedWork() {
               <p className="mono work-stack">{work.stack}</p>
             </div>
             <div className="work-description">
-              <p>{work.description}</p>
-              <ul>
-                {work.focus.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              {work.details.map((detail) => (
+                <p key={detail}>{detail}</p>
+              ))}
             </div>
           </article>
         ))}
